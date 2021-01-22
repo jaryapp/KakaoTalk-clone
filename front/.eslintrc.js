@@ -34,6 +34,8 @@ module.exports = {
     'jsx-a11y/no-onchange': 0,
     'no-restricted-globals': 0,
     'react/prop-types': 0,
+    'react/react-in-jsx-scope': 0,
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
   },
   settings: {
     'import/resolver': {
