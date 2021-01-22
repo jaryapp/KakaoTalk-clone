@@ -27,7 +27,7 @@ const StyledNavigation = styled.nav`
         color: #bdb4af;
       }
       &.person {
-        font-size: 1.7rem;
+        font-size: 1.8rem;
       }
       &.bubble {
         font-size: 1.3rem;

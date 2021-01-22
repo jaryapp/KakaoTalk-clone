@@ -1,15 +1,17 @@
 /* External dependencies */
 import React from 'react';
 import styled from 'styled-components';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 /* Internal dependencies */
 import Navigation from '@components/Navigation';
+import Friend from '@components/Friend';
 
 const Container = styled.section`
   display: flex;
   height: 100vh;
   & > aside {
-    width: 75px;
+    width: 70px;
   }
   & > main {
     flex-grow: 1;
@@ -22,7 +24,11 @@ const MainPage: React.FC = () => {
       <aside>
         <Navigation />
       </aside>
-      <main>컨텐츠</main>
+      <main>
+        <Router>
+          <Route exact path="/" component={Friend} />
+        </Router>
+      </main>
     </Container>
   );
 };
