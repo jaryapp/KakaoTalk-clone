@@ -7,18 +7,21 @@ import { ImBubble } from 'react-icons/im';
 import { FiMoreHorizontal } from 'react-icons/fi';
 import { AiFillBell } from 'react-icons/ai';
 
+/* Internal dependencies */
+import BallonNotification from '@elements/BallonNotification';
+
 const StyledNavigation = styled.nav`
   background-color: #423630;
   height: 100%;
   ul {
     height: 100%;
-    padding: 30px 0 10px;
+    padding: 50px 0 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     li {
       color: #8d8683;
-      margin-bottom: 0.8em;
+      margin-bottom: 1em;
       cursor: pointer;
       &:hover {
         color: #bdb4af;
@@ -63,11 +66,13 @@ const Navigation: React.FC = () => {
       id: 2,
       className: 'bubble',
       icon: <ImBubble />,
+      label: '999+',
     },
     {
       id: 3,
       className: 'more',
       icon: <FiMoreHorizontal />,
+      label: 'N',
     },
     {
       id: 4,
@@ -98,7 +103,13 @@ const Navigation: React.FC = () => {
               )}
               onClick={() => onClick(nav.id)}
             >
-              {nav.icon}
+              {nav.label ? (
+                <BallonNotification label={nav.label}>
+                  {nav.icon}
+                </BallonNotification>
+              ) : (
+                nav.icon
+              )}
             </li>
           );
         })}
