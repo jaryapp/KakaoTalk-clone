@@ -1,11 +1,11 @@
-import React, { EventHandler, useState } from 'react';
+/* External dependencies */
+import React, { useState } from 'react';
 import styled from 'styled-components';
+import classNames from 'classnames';
 import { BsPersonFill, BsFillGearFill } from 'react-icons/bs';
 import { ImBubble } from 'react-icons/im';
 import { FiMoreHorizontal } from 'react-icons/fi';
 import { AiFillBell } from 'react-icons/ai';
-
-import classNames from 'classnames';
 
 const StyledNavigation = styled.nav`
   background-color: #423630;

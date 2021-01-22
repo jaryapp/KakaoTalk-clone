@@ -1,7 +1,8 @@
+/* External dependencies */
 import React from 'react';
 import styled from 'styled-components';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 
+/* Internal dependencies */
 import Navigation from '@components/Navigation';
 
 const Container = styled.section`
