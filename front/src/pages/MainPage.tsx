@@ -9,7 +9,7 @@ import Friend from '@components/Friend';
 
 const Container = styled.section`
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   & > aside {
     width: 70px;
   }

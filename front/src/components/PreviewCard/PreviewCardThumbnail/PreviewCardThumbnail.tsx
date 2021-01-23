@@ -4,17 +4,26 @@ import styled from 'styled-components';
 
 /* Internal dependencies */
 
-const StyledPreviewCardThumbnail = styled.figure`
+const StyledPreviewCardThumbnail = styled.figure<Props>`
   display: inline-block;
   background-image: url('https://blog.kakaocdn.net/dn/cyOIpg/btqx7JTDRTq/1fs7MnKMK7nSbrM9QTIbE1/img.jpg');
   background-size: cover;
-  width: 50px;
-  height: 50px;
-  border-radius: 20px;
+  width: ${props => (props.size === 'lg' ? '50px' : '40px')};
+  height: ${props => (props.size === 'lg' ? '50px' : '40px')};
+  border-radius: 40%;
 `;
 
-const PreviewCardThumbnail: React.FC = () => {
-  return <StyledPreviewCardThumbnail></StyledPreviewCardThumbnail>;
+export enum ThumbnailSize {
+  lg = 'lg',
+  md = 'md',
+}
+
+interface Props {
+  size?: ThumbnailSize;
+}
+
+const PreviewCardThumbnail: React.FC<Props> = ({ size = ThumbnailSize.md }) => {
+  return <StyledPreviewCardThumbnail size={size}></StyledPreviewCardThumbnail>;
 };
 
 export default PreviewCardThumbnail;

@@ -3,7 +3,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 /* Internal dependencies */
-import { PreviewCardThumbnail } from '~/src/components/PreviewCard';
+import { PreviewCardThumbnail } from '@components/PreviewCard';
+import { ThumbnailSize } from '@components/PreviewCard/PreviewCardThumbnail';
 
 const StyledPreviewCardItem = styled.div`
   display: flex;
@@ -13,7 +14,7 @@ const StyledPreviewCardItem = styled.div`
     margin-left: 8px;
     font-size: 0.8rem;
     .title {
-      font-weight: 500;
+      font-weight: 600;
     }
     .description {
       margin-top: 6px;
@@ -32,12 +33,13 @@ const StyledPreviewCardItem = styled.div`
 interface Props {
   title: string;
   description: string;
+  size?: ThumbnailSize;
 }
 
-const PreviewCardItem: React.FC<Props> = ({ title, description }) => {
+const PreviewCardItem: React.FC<Props> = ({ title, description, size }) => {
   return (
     <StyledPreviewCardItem>
-      <PreviewCardThumbnail />
+      <PreviewCardThumbnail size={size} />
       <div className="contents">
         <div className="title">{title}</div>
         <div className="description">{description}</div>

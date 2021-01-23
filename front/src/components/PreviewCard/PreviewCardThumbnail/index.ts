@@ -1,1 +1,1 @@
-export { default } from './PreviewCardThumbnail';
+export { default, ThumbnailSize } from './PreviewCardThumbnail';

@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 /* Internal dependencies */
 import { PreviewCardItem } from '@components/PreviewCard';
+import { ThumbnailSize } from '@components/PreviewCard/PreviewCardThumbnail';
 
 const StyledPreviewCardList = styled.div`
   .preview-card-item {
@@ -13,12 +14,16 @@ const StyledPreviewCardList = styled.div`
   }
 `;
 
-const PreviewCardList: React.FC = () => {
+interface Props {
+  size?: ThumbnailSize;
+}
+
+const PreviewCardList: React.FC<Props> = ({ size }) => {
   return (
     <StyledPreviewCardList>
-      <PreviewCardItem title={'제리'} description={'상태메시지'} />
-      <PreviewCardItem title={'제리'} description={'상태메시지'} />
-      <PreviewCardItem title={'제리'} description={'상태메시지'} />
+      <PreviewCardItem title={'제리'} description={'상태메시지'} size={size} />
+      <PreviewCardItem title={'제리'} description={'상태메시지'} size={size} />
+      <PreviewCardItem title={'제리'} description={'상태메시지'} size={size} />
     </StyledPreviewCardList>
   );
 };

@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 /* Internal dependencies */
 import { PreviewCardList } from '@components/PreviewCard';
+import { ThumbnailSize } from '@components/PreviewCard/PreviewCardThumbnail';
 
 const StyledPreviewCardGroup = styled.div`
   .line {
@@ -24,14 +25,15 @@ const StyledPreviewCardGroup = styled.div`
 
 interface Props {
   groupName: string;
+  cardSize?: ThumbnailSize;
 }
 
-const PreviewCardGroup: React.FC<Props> = ({ groupName }) => {
+const PreviewCardGroup: React.FC<Props> = ({ groupName, cardSize }) => {
   return (
     <StyledPreviewCardGroup>
       <div className="line" />
       <p className="group-name">{groupName}</p>
-      <PreviewCardList />
+      <PreviewCardList size={cardSize} />
     </StyledPreviewCardGroup>
   );
 };
