@@ -3,8 +3,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 /* Internal dependencies */
-import { PreviewCardThumbnail } from '@components/PreviewCard';
+import {
+  PreviewCardThumbnail,
+  PreviewCardThumbnailGroup,
+} from '@components/PreviewCard';
 import { ThumbnailSize } from '@components/PreviewCard/PreviewCardThumbnail';
+import { ThumbnailCount } from '@components/PreviewCard/PreviewCardThumbnailGroup';
 
 const StyledPreviewCardItem = styled.div`
   display: flex;
@@ -25,21 +29,24 @@ const StyledPreviewCardItem = styled.div`
   &:hover {
     background: rgba(0, 0, 0, 0.034);
   }
-  figure {
-    margin-left: 17px;
-  }
 `;
 
 interface Props {
   title: string;
   description: string;
   size?: ThumbnailSize;
+  count: ThumbnailCount;
 }
 
-const PreviewCardItem: React.FC<Props> = ({ title, description, size }) => {
+const PreviewCardItem: React.FC<Props> = ({
+  title,
+  description,
+  size,
+  count,
+}) => {
   return (
     <StyledPreviewCardItem>
-      <PreviewCardThumbnail size={size} />
+      <PreviewCardThumbnailGroup size={size} count={count} />
       <div className="contents">
         <div className="title">{title}</div>
         <div className="description">{description}</div>

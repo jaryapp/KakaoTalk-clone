@@ -48,6 +48,10 @@ const StyledFriend = styled.div`
     ::-webkit-scrollbar-thumb:hover {
       background-color: #838383;
     }
+    
+    .thumbnail-group {
+      margin-left: 17px;
+    }
   }
   & > div {
     width: calc(100% - 34px);
@@ -65,11 +69,10 @@ const Friend: React.FC = () => {
       </header>
       <Search />
       <article className="people">
-        <PreviewCardItem
-          title={'제리'}
-          description={'상태메시지'}
-          size={ThumbnailSize.lg}
-        />
+        <PreviewCardGroup
+          groupName={'내 기본 프로필'}
+          cardSize={ThumbnailSize.lg}
+        ></PreviewCardGroup>
         <PreviewCardGroup groupName={'생일인 친구'}></PreviewCardGroup>
         <PreviewCardGroup groupName={'생일인 친구'}></PreviewCardGroup>
         <PreviewCardGroup groupName={'생일인 친구'}></PreviewCardGroup>
