@@ -12,7 +12,7 @@ const StyledSearch = styled.div`
   display: flex;
   align-items: center;
   height: 22px;
-  box-sizing: content-box;
+  box-sizing: border-box;
   border: solid 2px transparent;
   border-radius: 3px;
   &.focus {

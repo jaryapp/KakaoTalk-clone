@@ -5,11 +5,11 @@ import { BsPersonPlusFill } from 'react-icons/bs';
 
 /* Internal dependencies */
 import Search from '@components/Search';
+import { PreviewCardGroup, PreviewCardItem } from '@components/PreviewCard';
 
 const StyledFriend = styled.div`
-  width: 100%;
   height: 100%;
-  padding: 0px 17px;
+
   header {
     color: #404040;
     height: 40px;
@@ -17,9 +17,18 @@ const StyledFriend = styled.div`
     font-weight: bold;
     justify-content: space-between;
     align-items: center;
+    width: calc(100% - 34px);
+    margin: 0 auto;
     .icon {
       font-size: 1.4rem;
     }
+  }
+  .people {
+    padding: 10px 0px;
+  }
+  & > div {
+    width: calc(100% - 34px);
+    margin: 0 auto;
   }
 `;
 
@@ -31,6 +40,10 @@ const Friend: React.FC = () => {
         <BsPersonPlusFill className="icon" />
       </header>
       <Search />
+      <article className="people">
+        <PreviewCardItem title={'제리'} description={'상태메시지'} />
+        <PreviewCardGroup groupName={'생일인 친구'}></PreviewCardGroup>
+      </article>
     </StyledFriend>
   );
 };
