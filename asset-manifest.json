@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/KakaoTalk-clone/static/js/main.1c77bcb5.chunk.js",
-    "main.js.map": "/KakaoTalk-clone/static/js/main.1c77bcb5.chunk.js.map",
+    "main.js": "/KakaoTalk-clone/static/js/main.da6275c8.chunk.js",
+    "main.js.map": "/KakaoTalk-clone/static/js/main.da6275c8.chunk.js.map",
     "runtime-main.js": "/KakaoTalk-clone/static/js/runtime-main.f73ab6eb.js",
     "runtime-main.js.map": "/KakaoTalk-clone/static/js/runtime-main.f73ab6eb.js.map",
     "static/js/2.3e09a65c.chunk.js": "/KakaoTalk-clone/static/js/2.3e09a65c.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.f73ab6eb.js",
     "static/js/2.3e09a65c.chunk.js",
-    "static/js/main.1c77bcb5.chunk.js"
+    "static/js/main.da6275c8.chunk.js"
   ]
 }
