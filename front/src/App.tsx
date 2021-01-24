@@ -7,7 +7,7 @@ import MainPage from '@pages/MainPage';
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Route exact path="/" component={MainPage} />
     </Router>
   );

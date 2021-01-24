@@ -25,7 +25,7 @@ const MainPage: React.FC = () => {
         <Navigation />
       </aside>
       <main>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <Route exact path="/" component={Friend} />
         </Router>
       </main>
