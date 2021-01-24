@@ -1,0 +1,12 @@
+{
+  "name": "kakaotalk-clone",
+  "private":"true",
+  "workspaces": [
+    "front"
+  ],
+  "scripts": {
+    "start:front": "cd front && yarn start",
+    "build:front": "cd front && yarn build",
+    "deploy:front": "cd front && yarn deploy"
+  }
+}
