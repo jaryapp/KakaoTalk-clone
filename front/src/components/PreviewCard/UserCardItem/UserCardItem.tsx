@@ -50,7 +50,7 @@ const StyledUserCardItem = styled.div`
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        width: 90px;
+        width: 90%;
         font-size: 0.4rem;
         color: #525252;
       }
