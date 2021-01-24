@@ -18,8 +18,8 @@ const StyledThumbnail = styled.figure<IThumbnail>`
   display: inline-block;
   background-image: url('${props => props.url}');
   background-size: cover;
-  width: ${props => (props.size === 'lg' ? '50px' : '40px')};
-  height: ${props => (props.size === 'lg' ? '50px' : '40px')};
+  min-width: ${props => (props.size === 'lg' ? '50px' : '40px')};
+  min-height: ${props => (props.size === 'lg' ? '50px' : '40px')};
   border-radius: 40%;
 `;
 

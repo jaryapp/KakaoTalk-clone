@@ -31,7 +31,7 @@ const figurePostion: any = {
     size: '60%',
     child1: { bottom: '0px', left: '0px' },
     child2: { bottom: '0px', right: '0px' },
-    child3: { top: '0px', left: '7px' },
+    child3: { top: '0px', left: '17.5%' },
   },
   4: {
     size: '50%',
@@ -48,8 +48,8 @@ const StyledPreviewCardThumbnailGroup = styled.div<{ count: number }>`
   height: 40px;
   figure {
     position: absolute;
-    width: ${props => figurePostion[props.count].size};
-    height: ${props => figurePostion[props.count].size};
+    min-width: ${props => figurePostion[props.count].size};
+    min-height: ${props => figurePostion[props.count].size};
     border: 1px solid white;
   }
   figure:nth-child(1) {
