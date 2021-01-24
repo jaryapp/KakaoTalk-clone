@@ -1,13 +1,17 @@
-import PreviewCardGroup from './PreviewCardGroup';
-import PreviewCardList from './PreviewCardList';
-import PreviewCardItem from './PreviewCardItem';
-import PreviewCardThumbnail from './PreviewCardThumbnail';
-import PreviewCardThumbnailGroup from './PreviewCardThumbnailGroup';
+import Thumbnail from './Thumbnail';
+import ThumbnailGroup from './ThumbnailGroup';
+import UserCardItem, { IUserCardItem } from './UserCardItem';
+import UserGroupCardItem, { IUserGroupCardItem } from './UserGroupCardItem';
+import UserCardList, { IUserCardList } from './UserCardList';
+import UserCardGroup from './UserCardGroup';
 
 export {
-  PreviewCardGroup,
-  PreviewCardList,
-  PreviewCardItem,
-  PreviewCardThumbnail,
-  PreviewCardThumbnailGroup,
+  Thumbnail,
+  ThumbnailGroup,
+  UserCardItem,
+  UserGroupCardItem,
+  UserCardList,
+  UserCardGroup,
 };
+
+export type { IUserCardItem, IUserGroupCardItem, IUserCardList };

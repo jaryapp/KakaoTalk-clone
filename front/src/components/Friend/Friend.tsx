@@ -5,8 +5,14 @@ import { BsPersonPlusFill } from 'react-icons/bs';
 
 /* Internal dependencies */
 import Search from '@components/Search';
-import { PreviewCardGroup, PreviewCardItem } from '@components/PreviewCard';
-import { ThumbnailSize } from '@components/PreviewCard/PreviewCardThumbnail';
+import { UserCardGroup } from '@components/PreviewCard';
+import {
+  MyProfileMocks,
+  BirthDayFriendsMocks,
+  ChannelMocks,
+  FavoritesMocks,
+  FriendsMocks,
+} from '~/src/__mocks__/CardList';
 
 const StyledFriend = styled.div`
   height: 100%;
@@ -41,16 +47,20 @@ const StyledFriend = styled.div`
       height: 6px;
       border: 3px solid rgba(0, 0, 0, 0);
       background-clip: padding-box;
-      -webkit-border-radius: 10px;
+      border-radius: 10px;
       background-color: rgba(0, 0, 0, 0.15);
     }
 
     ::-webkit-scrollbar-thumb:hover {
       background-color: #838383;
     }
-    
-    .thumbnail-group {
-      margin-left: 17px;
+
+    .line,
+    .group-name,
+    .user-card,
+    .user-group-card {
+      padding-left: 17px;
+      padding-right: 17px;
     }
   }
   & > div {
@@ -69,17 +79,26 @@ const Friend: React.FC = () => {
       </header>
       <Search />
       <article className="people">
-        <PreviewCardGroup
-          groupName={'내 기본 프로필'}
-          cardSize={ThumbnailSize.lg}
-        ></PreviewCardGroup>
-        <PreviewCardGroup groupName={'생일인 친구'}></PreviewCardGroup>
-        <PreviewCardGroup groupName={'생일인 친구'}></PreviewCardGroup>
-        <PreviewCardGroup groupName={'생일인 친구'}></PreviewCardGroup>
-        <PreviewCardGroup groupName={'생일인 친구'}></PreviewCardGroup>
-        <PreviewCardGroup groupName={'생일인 친구'}></PreviewCardGroup>
-        <PreviewCardGroup groupName={'생일인 친구'}></PreviewCardGroup>
-        <PreviewCardGroup groupName={'생일인 친구'}></PreviewCardGroup>
+        <UserCardGroup
+          cardGroupName={'내 기본 프로필'}
+          cardList={[MyProfileMocks]}
+        ></UserCardGroup>
+        <UserCardGroup
+          cardGroupName={'생일인 친구'}
+          cardList={BirthDayFriendsMocks}
+        ></UserCardGroup>
+        <UserCardGroup
+          cardGroupName={'즐겨찾기'}
+          cardList={FavoritesMocks}
+        ></UserCardGroup>
+        <UserCardGroup
+          cardGroupName={'채널'}
+          cardList={ChannelMocks}
+        ></UserCardGroup>
+        <UserCardGroup
+          cardGroupName={'친구'}
+          cardList={FriendsMocks}
+        ></UserCardGroup>
       </article>
     </StyledFriend>
   );

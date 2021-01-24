@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "profileUrl": {
+            "url": "https://blog.kakaocdn.net/dn/cyOIpg/btqx7JTDRTq/1fs7MnKMK7nSbrM9QTIbE1/img.jpg"
+        },
+        "username": "냐옹이"
+    },
+    {
+        "id": 2,
+        "groupProfileUrl": [
+            {
+                "url": "https://blog.kakaocdn.net/dn/cyOIpg/btqx7JTDRTq/1fs7MnKMK7nSbrM9QTIbE1/img.jpg"
+            },
+            {
+                "url": "https://blog.kakaocdn.net/dn/cyOIpg/btqx7JTDRTq/1fs7MnKMK7nSbrM9QTIbE1/img.jpg"
+            },
+            {
+                "url": "https://blog.kakaocdn.net/dn/cyOIpg/btqx7JTDRTq/1fs7MnKMK7nSbrM9QTIbE1/img.jpg"
+            }
+        ],
+        "groupname": "가족"
+    },
+    {
+        "id": 3,
+        "groupProfileUrl": [
+            {
+                "url": "https://blog.kakaocdn.net/dn/cyOIpg/btqx7JTDRTq/1fs7MnKMK7nSbrM9QTIbE1/img.jpg"
+            },
+            {
+                "url": "https://blog.kakaocdn.net/dn/cyOIpg/btqx7JTDRTq/1fs7MnKMK7nSbrM9QTIbE1/img.jpg"
+            },
+            {
+                "url": "https://blog.kakaocdn.net/dn/cyOIpg/btqx7JTDRTq/1fs7MnKMK7nSbrM9QTIbE1/img.jpg"
+            },
+            {
+                "url": "https://blog.kakaocdn.net/dn/cyOIpg/btqx7JTDRTq/1fs7MnKMK7nSbrM9QTIbE1/img.jpg"
+            }
+        ],
+        "groupname": "고등학교 친구"
+    }
+]

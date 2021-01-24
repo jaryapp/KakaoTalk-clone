@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "profileUrl": {
+            "url": "https://blog.kakaocdn.net/dn/cyOIpg/btqx7JTDRTq/1fs7MnKMK7nSbrM9QTIbE1/img.jpg"
+        },
+        "username": "냐옹이",
+        "stateMsg": "쭈니어"
+    },
+    {
+        "id": 2,
+        "profileUrl": {
+            "url": "https://blog.kakaocdn.net/dn/cyOIpg/btqx7JTDRTq/1fs7MnKMK7nSbrM9QTIbE1/img.jpg"
+        },
+        "username": "김아무개"
+    },
+    {
+        "id": 3,
+        "profileUrl": {
+            "url": "https://blog.kakaocdn.net/dn/cyOIpg/btqx7JTDRTq/1fs7MnKMK7nSbrM9QTIbE1/img.jpg"
+        },
+        "username": "박아무개"
+    },
+    {
+        "id": 4,
+        "profileUrl": {
+            "url": "https://blog.kakaocdn.net/dn/cyOIpg/btqx7JTDRTq/1fs7MnKMK7nSbrM9QTIbE1/img.jpg"
+        },
+        "username": "요호호"
+    }
+]

@@ -3,14 +3,18 @@ import React from 'react';
 import styled from 'styled-components';
 
 /* Internal dependencies */
-import { PreviewCardThumbnail } from '@components/PreviewCard';
-import { ThumbnailSize } from '@components/PreviewCard/PreviewCardThumbnail';
+import { Thumbnail } from '@components/PreviewCard';
+import { IThumbnail } from '@components/PreviewCard/Thumbnail/Thumbnail';
 
 export enum ThumbnailCount {
   One = 1,
   Two = 2,
   Three = 3,
   Four = 4,
+}
+
+interface Props {
+  groupProfileUrl: IThumbnail[];
 }
 
 const figurePostion: any = {
@@ -38,7 +42,7 @@ const figurePostion: any = {
   },
 };
 
-const StyledPreviewCardThumbnailGroup = styled.div<Props>`
+const StyledPreviewCardThumbnailGroup = styled.div<{ count: number }>`
   position: relative;
   width: 40px;
   height: 40px;
@@ -78,22 +82,19 @@ const StyledPreviewCardThumbnailGroup = styled.div<Props>`
   }
 `;
 
-interface Props {
-  size?: ThumbnailSize;
-  count: ThumbnailCount;
-}
-
-const Name: React.FC<Props> = ({ size, count }) => {
+const Name: React.FC<Props> = ({ groupProfileUrl }) => {
   function makeMocks() {
-    const mocks = [];
-    for (let i = 0; i < count; i++) {
-      mocks.push(<PreviewCardThumbnail size={size} />);
-    }
-    return mocks;
+    return groupProfileUrl.map((profile, idx) => (
+      // 임시키
+      <Thumbnail key={idx} {...profile} />
+    ));
   }
 
   return (
-    <StyledPreviewCardThumbnailGroup className="thumbnail-group" count={count}>
+    <StyledPreviewCardThumbnailGroup
+      className="thumbnail-group"
+      count={groupProfileUrl.length}
+    >
       {makeMocks()}
     </StyledPreviewCardThumbnailGroup>
   );
