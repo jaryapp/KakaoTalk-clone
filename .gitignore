@@ -2,7 +2,7 @@
 */node_modules/*
 
 # production
-front/build
+# front/build
 
 # misc
 .DS_Store
