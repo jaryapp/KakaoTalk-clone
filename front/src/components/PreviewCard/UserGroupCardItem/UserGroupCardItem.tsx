@@ -17,15 +17,24 @@ const StyledUserCardItem = styled.div`
   align-items: center;
   padding: 7px 0px;
   .contents {
+    display: flex;
     margin-left: 8px;
     font-size: 0.8rem;
+    align-content: center;
     .title {
+      color: #222;
       font-weight: 600;
     }
     .description {
       margin-top: 6px;
       color: gray;
       font-size: 0.9em;
+    }
+    .people-count {
+      margin-left: 6px;
+      font-weight: bold;
+      color: #b3b3b3;
+      font-size: 1.1em;
     }
   }
   &:hover {
@@ -42,7 +51,7 @@ const UserCardItem: React.FC<IUserGroupCardItem> = ({
       <ThumbnailGroup groupProfileUrl={groupProfileUrl} />
       <div className="contents">
         <div className="title">{groupname}</div>
-        {/* <div className="people">{groupProfileUrl.length}</div> */}
+        <div className="people-count">{groupProfileUrl.length}</div>
       </div>
     </StyledUserCardItem>
   );

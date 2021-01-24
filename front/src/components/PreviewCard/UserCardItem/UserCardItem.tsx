@@ -28,6 +28,7 @@ const StyledUserCardItem = styled.div`
 
     & > .info {
       .title {
+        color: #222;
         font-weight: 600;
       }
       .description {
