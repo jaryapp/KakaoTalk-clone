@@ -14,11 +14,21 @@ $ yarn start:front
 
 ## Structure
 ```
+KakaoTalk-clone
 ├── front
 │   ├── src
 │   │   ├── __mocks__
 │   │   │   └── CardList
+│   │   ├── assets
+│   │   ├── components
+│   │   │   ├── Friend
+│   │   │   ├── Navigation
+│   │   │   ├── PreviewCard
+│   │   │   └── Search
+│   │   ├── constants
+│   │   ├── elements
+│   │   │   └── BallonNotification
 │   │   ├── hooks
 │   │   ├── pages
-│   │   ├── queries
+│   │   └── queries
 ```
