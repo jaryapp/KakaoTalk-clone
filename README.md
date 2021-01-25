@@ -6,7 +6,7 @@ Mac버전 PC카카오톡의 UI 및 기능들을 React로 구현
 
 ## quick start
 ```
-$ git clone 
+$ git clone https://github.com/jaryapp/KakaoTalk-clone.git
 $ cd KakaoTalk-clone
 $ yarn install
 $ yarn start:front
