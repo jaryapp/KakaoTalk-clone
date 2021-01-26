@@ -9,11 +9,12 @@ import { AiFillBell } from 'react-icons/ai';
 
 /* Internal dependencies */
 import BallonNotification from '@elements/BallonNotification';
+import WindowManagement from '@components/WindowManagement';
 
 const StyledNavigation = styled.nav`
   background-color: #423630;
   height: 100%;
-  ul {
+  .menu {
     height: 100%;
     padding: 50px 0 15px;
     display: flex;
@@ -92,7 +93,8 @@ const Navigation: React.FC = () => {
 
   return (
     <StyledNavigation>
-      <ul>
+      <WindowManagement />
+      <ul className="menu">
         {navList.map(nav => {
           return (
             <li
