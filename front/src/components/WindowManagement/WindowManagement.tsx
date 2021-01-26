@@ -1,8 +1,6 @@
 /* External dependencies */
 import React from 'react';
 import styled from 'styled-components';
-import classNames from 'classnames';
-import { AiOutlineSearch } from 'react-icons/ai';
 import { FiX, FiMaximize2, FiMinimize2 } from 'react-icons/fi';
 
 /* Internal dependencies */

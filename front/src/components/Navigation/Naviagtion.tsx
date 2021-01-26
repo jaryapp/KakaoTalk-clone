@@ -14,9 +14,10 @@ import WindowManagement from '@components/WindowManagement';
 const StyledNavigation = styled.nav`
   background-color: #423630;
   height: 100%;
+  padding-top: 8px;
   .menu {
     height: 100%;
-    padding: 50px 0 15px;
+    padding: 32px 0 32px;
     display: flex;
     flex-direction: column;
     align-items: center;
