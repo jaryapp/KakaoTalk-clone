@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/KakaoTalk-clone/static/js/main.6f6b06f8.chunk.js",
-    "main.js.map": "/KakaoTalk-clone/static/js/main.6f6b06f8.chunk.js.map",
-    "runtime-main.js": "/KakaoTalk-clone/static/js/runtime-main.2a99f833.js",
-    "runtime-main.js.map": "/KakaoTalk-clone/static/js/runtime-main.2a99f833.js.map",
-    "static/js/2.06cb768d.chunk.js": "/KakaoTalk-clone/static/js/2.06cb768d.chunk.js",
-    "static/js/2.06cb768d.chunk.js.map": "/KakaoTalk-clone/static/js/2.06cb768d.chunk.js.map",
+    "main.js": "/KakaoTalk-clone/static/js/main.6b46f156.chunk.js",
+    "main.js.map": "/KakaoTalk-clone/static/js/main.6b46f156.chunk.js.map",
+    "runtime-main.js": "/KakaoTalk-clone/static/js/runtime-main.f73ab6eb.js",
+    "runtime-main.js.map": "/KakaoTalk-clone/static/js/runtime-main.f73ab6eb.js.map",
+    "static/js/2.1a044e92.chunk.js": "/KakaoTalk-clone/static/js/2.1a044e92.chunk.js",
+    "static/js/2.1a044e92.chunk.js.map": "/KakaoTalk-clone/static/js/2.1a044e92.chunk.js.map",
     "index.html": "/KakaoTalk-clone/index.html",
-    "static/js/2.06cb768d.chunk.js.LICENSE.txt": "/KakaoTalk-clone/static/js/2.06cb768d.chunk.js.LICENSE.txt"
+    "static/js/2.1a044e92.chunk.js.LICENSE.txt": "/KakaoTalk-clone/static/js/2.1a044e92.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.2a99f833.js",
-    "static/js/2.06cb768d.chunk.js",
-    "static/js/main.6f6b06f8.chunk.js"
+    "static/js/runtime-main.f73ab6eb.js",
+    "static/js/2.1a044e92.chunk.js",
+    "static/js/main.6b46f156.chunk.js"
   ]
 }
