@@ -19,19 +19,20 @@ const StyledWindowManagement = styled.ul`
     align-items: center;
     font-size: 0.5rem;
     color: transparent;
+
+    &.close {
+      background-color: #ff5f58;
+    }
+    &.down {
+      background-color: #febf2f;
+    }
+    &.extend {
+      background-color: #2bcc41;
+    }
   }
   &:hover {
     li {
       color: black;
-    }
-    .close {
-      background-color: #ff5f58;
-    }
-    .down {
-      background-color: #febf2f;
-    }
-    .extend {
-      background-color: #2bcc41;
     }
   }
 `;
