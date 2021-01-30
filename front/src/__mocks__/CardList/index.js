@@ -3,3 +3,4 @@ export { default as BirthDayFriendsMocks } from './BirthdayFriends.json';
 export { default as FavoritesMocks } from './Favorites.json';
 export { default as ChannelMocks } from './Channel.json';
 export { default as FriendsMocks } from './Friends.json';
+export { default as ChatRooms } from './ChatRooms.json';

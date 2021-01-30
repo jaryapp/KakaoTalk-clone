@@ -6,6 +6,7 @@ import { BsPersonFill, BsFillGearFill } from 'react-icons/bs';
 import { ImBubble } from 'react-icons/im';
 import { FiMoreHorizontal } from 'react-icons/fi';
 import { AiFillBell } from 'react-icons/ai';
+import { useHistory } from 'react-router-dom';
 
 /* Internal dependencies */
 import BallonNotification from '@elements/BallonNotification';
@@ -58,23 +59,27 @@ const StyledNavigation = styled.nav`
 
 const Navigation: React.FC = () => {
   const [activeId, setActiveId] = useState<number>(1);
+  const history = useHistory();
   const navList = [
     {
       id: 1,
       className: 'person',
       icon: <BsPersonFill />,
+      link: '/',
     },
     {
       id: 2,
       className: 'bubble',
       icon: <ImBubble />,
       label: '999+',
+      link: '/chat',
     },
     {
       id: 3,
       className: 'more',
       icon: <FiMoreHorizontal />,
       label: 'N',
+      link: '/more',
     },
     {
       id: 4,
@@ -90,6 +95,8 @@ const Navigation: React.FC = () => {
 
   const onClick = (id: number) => {
     setActiveId(id);
+    const match = navList.find(nav => nav.id === id);
+    if (match?.link) history.push(match.link);
   };
 
   return (

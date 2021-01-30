@@ -1,11 +1,12 @@
 /* External dependencies */
 import React from 'react';
 import styled from 'styled-components';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 /* Internal dependencies */
 import Navigation from '@components/Navigation';
 import Friend from '@components/Friend';
+import ChatRooms from '@components/ChatRooms';
 
 const Container = styled.section`
   display: flex;
@@ -25,9 +26,8 @@ const MainPage: React.FC = () => {
         <Navigation />
       </aside>
       <main>
-        <Router basename={process.env.PUBLIC_URL}>
-          <Route exact path="/" component={Friend} />
-        </Router>
+        <Route exact path="/" component={Friend} />
+        <Route exact path="/chat" component={ChatRooms} />
       </main>
     </Container>
   );
