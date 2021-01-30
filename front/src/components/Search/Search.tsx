@@ -33,7 +33,11 @@ const StyledSearch = styled.div`
   }
 `;
 
-const Search: React.FC = () => {
+interface SearchParams {
+  placeholder?: string;
+}
+
+const Search: React.FC<SearchParams> = ({ placeholder }) => {
   const [isFocus, setIsFocus] = useState<boolean>(false);
 
   const onFocusInput = () => {
@@ -51,7 +55,7 @@ const Search: React.FC = () => {
       </figure>
       <input
         type="search"
-        placeholder="이름으로 검색"
+        placeholder={placeholder}
         onFocus={onFocusInput}
         onBlur={onBlur}
       />
