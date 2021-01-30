@@ -77,7 +77,7 @@ const Friend: React.FC = () => {
         <span>친구</span>
         <BsPersonPlusFill className="icon" />
       </header>
-      <Search />
+      <Search placeholder="이름으로 검색"/>
       <article className="people">
         <UserCardGroup
           cardGroupName={'내 기본 프로필'}
